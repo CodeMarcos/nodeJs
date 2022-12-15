@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +7,12 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <ul>
+      <% docs.forEach(function(customers){ %>
+        <li>
+            <%= customer.name %>
+        </li>
+      <% }) %>
+    </ul>
   </body>
 </html>
